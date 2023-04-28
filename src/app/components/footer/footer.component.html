@@ -1,0 +1,16 @@
+<div class="sticky p-4 bottom-0 flex flex-wrap justify-between items-start w-full">
+    <div class="flex flex-col">
+        <div class="w-24 h-auto"><img src="assets/img/logo.svg" alt="logo" class="w-full"></div>
+        <h3 class="w-72 text-xl font-bold">One of the best furniture agency.</h3>
+    </div>
+    <div class="flex flex-col">
+        <div >
+            <ul class="list-disc mb-3"><li>Enter  your email to get the latest news</li></ul>
+            <input class="appearance-none border-bottom  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="EmailAddress" type="email" placeholder="Email Address">      
+        </div>
+        <div class="social-links">
+            <h5 class="text-base mb-2">Follow us On</h5>
+            <div class="flex"><a href="#" *ngFor="let i of social" class="mr-4 bg-slate-300 rounded-full"><img src="{{i.img}}" alt="{{i.name}}" class="p-1"></a></div>
+        </div>
+    </div>
+</div>
