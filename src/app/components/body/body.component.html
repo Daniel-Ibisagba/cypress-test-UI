@@ -1,0 +1,52 @@
+<div class="w-full py-8 body relative z-0 top-0">
+    <div class="justify-center container mx-auto px-4">
+        <div class="flex flex-col jusify-center items-center text-center">
+            <h1 class="text-5xl font-bold mb-6">Minimalist Room</h1>
+            <p class="text-base  w-full md:w-2/5 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+        <img src="{{imgLib[0]}}" alt="" class="w-full h-auto border-none rounded shadow align-middle my-8">
+    </div>
+    
+    <div class=" grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 container mx-auto overview">
+        <div class="flex flex-col">
+            <h4 class="text-xl font-semibold mb-3">Project Overview</h4>
+            <p class="text-base mb-8">Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not
+                 interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning
+                  can be done anytime and anywhere. </p>
+            <div class="flex items-center relative bottom-0 ">
+                <p class="text-sm mr-12">July 22 - 2022</p>
+                <p class="text-sm">Interior Design - Furnitur</p>
+            </div>
+        </div>
+        
+        <div class="flex flex-col">
+            <h4 class="text-xl font-semibold mb-3">Design Process</h4>
+            <p class="text-base mb-2">Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.</p>
+            <p class="text-base">Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 py-12 container mx-auto">
+        <div *ngFor="let i of imgLib.slice(1, 3)"class="flex flex-col"><img src="{{i}}" alt="" class="w-full h-auto border-none rounded shadow align-middle"> </div>
+    </div>
+
+    <div class="justify-center px-4 container  mx-auto">
+        <img src="{{imgLib[3]}}" alt="" class="w-full h-auto border-none rounded shadow align-middle">
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 py-12 container mx-auto">
+        <div *ngFor="let i of imgLib.slice(4, 6)"class="flex flex-col"><img src="{{i}}" alt="" class="w-full h-auto border-none rounded shadow align-middle"> </div>
+    </div>
+
+    <div class="contact-sect mb-2">
+        <div class="container mx-auto  grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-20 px-4 py-8">
+            <div class="">
+                <h4 class="text-2xl font-semibold">let's discuss making your interior like a dream place!</h4>
+            </div>
+            <div class="">
+                <p class="text-base">Contact us below to work together to build your amazing interior</p>
+                <button class="text-sm p-4 py-2 mt-4 rounded-none ...">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
